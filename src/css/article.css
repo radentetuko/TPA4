@@ -1,0 +1,113 @@
+main{
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+main .container{
+    display: flex;
+    justify-content: center;
+}
+main section{    
+    width: 84%;
+}
+main h1{
+  color: #7DCE13;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+main .item-article{    
+  display: flex;
+  margin-top: 15px;
+  border: 1px solid #7DCE13;
+  border-radius: 12px; 
+}
+main .item-article img{  
+  margin: 20px;
+  border-radius: 10px; 
+  width: 90vh;
+  height: 45vh;
+}
+main .item-article .text {    
+  padding: 20px;
+}
+.text h2{
+  margin-bottom: 10px;
+}
+.item-article {
+  margin: 30px;
+  width: 83vh;
+  height: 40vh;
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 4px 5px 7px grey;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .25s ease;
+  backface-visibility: hidden;
+}
+.item-article:hover {
+  transform: scale(.9);
+}
+.item-article:hover::after {
+  height: 280px;
+}
+.item-article:hover .con-text p {
+  margin-bottom: 0px;
+  opacity: 1;
+}
+.item-article:hover img {
+  transform: scale(1.25);
+}
+.item-article::after {
+  width: 100%;
+  content: '';
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1)100%);
+  z-index: 20;
+  transition: all .25s ease;
+}
+.item-article .con-text {
+  z-index: 30;
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 55px;
+}
+.item-article .con-text p {
+  font-size: .8rem;
+  opacity: 0;
+  margin-bottom: -170px;
+  transition: all .25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.item-article .con-text p a {
+  text-decoration: none;
+  color: white;
+}
+.item-article .con-text p button {
+  padding: 7px 17px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all .25s ease;
+  font-size: .75rem;
+  outline: none;
+}
+.item-article .con-text p button:hover {
+  background: #7DCE13;
+  border: 2px solid #7DCE13;
+  color: #000;
+}

@@ -1,0 +1,16 @@
+main{
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+main .container{
+    display: flex;
+    justify-content: center;
+}
+main section{    
+    width: 84%;
+}
+main h1{
+  color: #7DCE13;
+  font-size: 24px;
+  margin-bottom: 15px;
+}

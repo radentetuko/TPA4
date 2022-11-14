@@ -1,0 +1,100 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin: 10px 24px;
+}
+nav img{
+    width: 150px;
+    height: 100%;
+}
+.Home{
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Home:hover{
+    color: greenyellow;
+}
+.Article{
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Article:hover{
+    color: greenyellow;
+}
+.Portofolio{
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Portofolio:hover{
+    color: greenyellow;
+}
+.About{
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+}
+.About:hover{
+    color: greenyellow;
+}
+nav ul li .Home::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7DCE13;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li .Home:hover::after{
+    width: 100%;
+}
+nav ul li .Article::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7DCE13;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li .Article:hover::after{
+    width: 100%;
+}
+nav ul li .Portofolio::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7DCE13;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li .Portofolio:hover::after{
+    width: 100%;
+}
+nav ul li .About::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7DCE13;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li .About:hover::after{
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+main{
+    margin-top: 50px;
+}
+main #about{    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.container-about{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container-about #about{
+    width: 75%;
+}
+.foto-about{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.foto-about img{
+    width: 200px;
+}
+.keterangan-about{
+    width: 65%;
+}
+.keterangan-about h2{
+    color: #7DCE13;
+    font-size: 40px;
+}
+.keterangan-about h3{
+    font-size: 20px;
+}
+.toolbox h3{
+    font-size: 24px;
+}
+.item-toolbox{
+    display: flex;
+    flex-direction: column;
+}
+.toolbox{
+    display: flex;
+    flex-direction: column;
+}
+.item-toolbox h1{
+    font-size: 16px;
+}
+.toolbox1 i{
+    padding-right: 12px;
+    font-size: 36px;
+}
+.toolbox1{
+    display: flex;
+    align-items: center;
+}
